@@ -1,27 +1,3 @@
-# Eigene-API
-Schnittstelle mit FLASK, Python realisieren
-
-Schnittstelle mit FLASK erstellt und Wetterdaten sollen für zwei feste Orte ausgegeben werden.
-
-
-## Client Script
-```
-import requests
-import json
-
-while True:
-	city = raw_input("City? : ")
-	url = 'http://127.0.0.1:5000/?q={}'.format(city)
-	res = requests.get(url)
-	data = res.json()
-
-	if res.status_code == 200:
-		print(data)
-		break
-```  
-
-## API Script
-```
 from flask import Flask, jsonify, request
 app = Flask(__name__)
 print "routes.py"
@@ -66,4 +42,3 @@ def hello():
         return jsonify(bonn)
 
     return jsonify(weather)
-```
