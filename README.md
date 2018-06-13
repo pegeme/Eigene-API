@@ -17,8 +17,7 @@ while True:
 
 	if res.status_code == 200:
 		print(data)
-
-	break
+		break
 ```  
 
 ## API Script
