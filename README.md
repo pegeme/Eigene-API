@@ -1,2 +1,5 @@
 # Eigene-API
-Eigene Schnittstelle mit FLASK, Python programmiert
+Schnittstelle mit FLASK, Python realisieren
+
+Schnittstelle mit FLASK erstellt und Wetterdaten sollen für zwei feste Orte ausgegeben werden.
+
