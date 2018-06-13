@@ -4,9 +4,8 @@ Schnittstelle mit FLASK, Python realisieren
 Schnittstelle mit FLASK erstellt und Wetterdaten sollen für zwei feste Orte ausgegeben werden.
 
 
-############# Client Script ###################
-
-
+## Client Script
+```
 import requests
 import json
 
@@ -20,10 +19,10 @@ while True:
 		print(data)
 
 	break
-  ############################################
-  
-  
-  ############# API Script ###################
+```  
+
+## API Script
+```
 from flask import Flask, jsonify, request
 app = Flask(__name__)
 print "routes.py"
@@ -68,3 +67,4 @@ def hello():
         return jsonify(bonn)
 
     return jsonify(weather)
+```
